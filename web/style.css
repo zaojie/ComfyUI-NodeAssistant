@@ -1,0 +1,48 @@
+.na-dialog { color-scheme: dark; box-sizing: border-box; width: min(540px, calc(100vw - 24px)); max-height: calc(100dvh - 40px); margin: auto 24px auto auto; padding: 22px; border: 1px solid #414754; border-radius: 16px; background: #191c23; color: #e9edf5; box-shadow: 0 24px 80px #0008; font: 14px/1.6 system-ui, sans-serif; overflow: auto; }
+.na-dialog::backdrop { background: #0003; }
+.na-dialog header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.na-dialog h2 { font-size: 18px; line-height: 1.4; margin: 4px 0 0; overflow-wrap: anywhere; }
+.na-dialog small { color: #a4adbd; }
+.na-dialog button { font: inherit; border: 1px solid #454d5c; border-radius: 8px; padding: 6px 12px; background: #272d38; color: #e9edf5; cursor: pointer; white-space: nowrap; }
+.na-dialog button:hover { background: #363f4e; }
+.na-dialog button:disabled { opacity: .5; cursor: wait; }
+.na-dialog :focus-visible { outline: 2px solid #7dd3fc; outline-offset: 3px; }
+.na-dialog .na-primary { background: #a7d9ed; color: #10212b; border-color: #a7d9ed; }
+.na-details { border: 1px solid #353c48; border-radius: 10px; padding: 12px; margin-bottom: 14px; }
+.na-details summary { cursor: pointer; font-weight: 600; }
+.na-details pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.7 system-ui, sans-serif; max-height: 240px; overflow: auto; color: #c1c9d6; }
+.na-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.na-transcript { max-height: 320px; overflow: auto; margin: 16px 0; }
+.na-transcript:empty { display: none; }
+.na-message { margin: 10px 0; padding: 12px; border-radius: 10px; background: #222834; overflow-wrap: anywhere; white-space: pre-wrap; }
+.na-message > strong { display: block; margin-bottom: 5px; color: #90cfe7; font-size: 12px; }
+.na-markdown { white-space: normal; line-height: 1.75; }
+.na-markdown > :first-child { margin-top: 0; }
+.na-markdown > :last-child { margin-bottom: 0; }
+.na-markdown p { margin: .6em 0; }
+.na-markdown :is(h1,h2,h3,h4,h5,h6) { margin: 1em 0 .45em; line-height: 1.4; font-weight: 700; }
+.na-markdown h1 { font-size: 1.35em; }
+.na-markdown h2 { font-size: 1.2em; }
+.na-markdown :is(h3,h4,h5,h6) { font-size: 1.05em; }
+.na-markdown :is(ul,ol) { padding-left: 1.6em; margin: .6em 0; }
+.na-markdown ul { list-style: disc outside; }
+.na-markdown ol { list-style: decimal outside; }
+.na-markdown li { margin: .25em 0; }
+.na-markdown strong { font-weight: 700; }
+.na-markdown em { font-style: italic; }
+.na-markdown code { font: .9em/1.6 ui-monospace, monospace; background: #121820; padding: .15em .35em; border-radius: 4px; }
+.na-markdown pre { padding: 12px; background: #121820; border: 1px solid #394353; border-radius: 8px; overflow-x: auto; white-space: pre; }
+.na-markdown pre code { padding: 0; background: none; }
+.na-markdown blockquote { margin: .7em 0; border-left: 3px solid #78bdd6; padding-left: 12px; color: #bac6d6; }
+.na-markdown a { color: #8ed5f1; text-decoration: underline; }
+.na-markdown table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin: .8em 0; }
+.na-markdown :is(th,td) { border: 1px solid #465263; padding: 6px 10px; min-width: 80px; }
+.na-markdown th { background: #303a49; font-weight: 600; }
+.na-markdown hr { border: 0; border-top: 1px solid #465263; margin: 1em 0; }
+.na-user { background: #293b43; }
+.na-privacy { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; margin: 16px 0 4px; }
+.na-privacy input { margin-top: 4px; }
+.na-note { display: block; font-size: 11px; }
+.na-dialog textarea { box-sizing: border-box; width: 100%; margin: 12px 0 8px; resize: vertical; min-height: 70px; max-height: 220px; background: #11151c; color: #e9edf5; border: 1px solid #465263; border-radius: 10px; padding: 12px; font: inherit; }
+.na-status { font-size: 12px; color: #b8c7d8; margin-top: 12px; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .na-dialog { margin: auto; padding: 16px; } }
